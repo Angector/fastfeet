@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#111111" />
   <title>فست‌فود آتش | طعم بی‌نظیر</title>
-  <meta name="description" content="فست‌فود آتش؛ برگر، پیتزا و سوخاری تازه و داغ با ارسال سریع و گرم." />
-  <link rel="icon" href="images/brand/logo.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -24,9 +22,7 @@
     <div class="container header__inner">
 
       <a href="#hero" class="brand" aria-label="فست‌فود آتش — خانه">
-        <figure class="media media--logo" data-label="لوگو">
-          <img src="images/brand/logo.svg" alt="لوگوی فست‌فود آتش" />
-        </figure>
+        <div class="media media--logo"></div>
         <span class="brand__name">آتش</span>
       </a>
 
@@ -67,12 +63,10 @@
   </header>
 
   <main>
-
     <!-- ===== Hero ===== -->
     <section class="hero" id="hero">
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="container hero__inner">
-
         <div class="hero__content">
           <span class="eyebrow">اینجا طعم، یه چیز دیگه‌ست!</span>
           <h1 class="hero__title">
@@ -92,14 +86,10 @@
             <li>ارسال سریع</li>
           </ul>
         </div>
-
         <div class="hero__media">
-          <figure class="media media--hero" data-label="تصویر غذای اصلی — images/hero/hero-food.webp">
-            <img src="images/hero/hero-food.webp" alt="غذای ویژه فست‌فود آتش" />
-          </figure>
-          <span class="hero__badge" aria-hidden="true">🔥 تازه و داغ</span>
+          <!-- عکس حذف شد، باکس گرادیانت CSS جایش می‌آید -->
+          <div class="media media--hero"></div>
         </div>
-
       </div>
     </section>
 
@@ -112,42 +102,15 @@
         </header>
 
         <div class="categories__track" id="categoriesTrack" role="tablist" aria-label="دسته‌بندی غذا">
-          <button class="cat is-active" data-cat="همه" role="tab" aria-selected="true" aria-pressed="true">
-            <figure class="media media--cat" data-label="همه"><img src="images/categories/all.webp" alt="همه" /></figure>
-            <span class="cat__name">همه</span>
-          </button>
-          <button class="cat" data-cat="برگر" role="tab" aria-selected="false" aria-pressed="false">
-            <figure class="media media--cat" data-label="برگر"><img src="images/categories/burgers.webp" alt="برگر" /></figure>
-            <span class="cat__name">برگر</span>
-          </button>
-          <button class="cat" data-cat="پیتزا" role="tab" aria-selected="false" aria-pressed="false">
-            <figure class="media media--cat" data-label="پیتزا"><img src="images/categories/pizza.webp" alt="پیتزا" /></figure>
-            <span class="cat__name">پیتزا</span>
-          </button>
-          <button class="cat" data-cat="سوخاری" role="tab" aria-selected="false" aria-pressed="false">
-            <figure class="media media--cat" data-label="سوخاری"><img src="images/categories/fried.webp" alt="سوخاری" /></figure>
-            <span class="cat__name">سوخاری</span>
-          </button>
-          <button class="cat" data-cat="ساندویچ" role="tab" aria-selected="false" aria-pressed="false">
-            <figure class="media media--cat" data-label="ساندویچ"><img src="images/categories/sandwich.webp" alt="ساندویچ" /></figure>
-            <span class="cat__name">ساندویچ</span>
-          </button>
-          <button class="cat" data-cat="سیب‌زمینی" role="tab" aria-selected="false" aria-pressed="false">
-            <figure class="media media--cat" data-label="سیب‌زمینی"><img src="images/categories/fries.webp" alt="سیب‌زمینی" /></figure>
-            <span class="cat__name">سیب‌زمینی</span>
-          </button>
-          <button class="cat" data-cat="پیش‌غذا" role="tab" aria-selected="false" aria-pressed="false">
-            <figure class="media media--cat" data-label="پیش‌غذا"><img src="images/categories/starter.webp" alt="پیش‌غذا" /></figure>
-            <span class="cat__name">پیش‌غذا</span>
-          </button>
-          <button class="cat" data-cat="نوشیدنی" role="tab" aria-selected="false" aria-pressed="false">
-            <figure class="media media--cat" data-label="نوشیدنی"><img src="images/categories/drinks.webp" alt="نوشیدنی" /></figure>
-            <span class="cat__name">نوشیدنی</span>
-          </button>
-          <button class="cat" data-cat="دسر" role="tab" aria-selected="false" aria-pressed="false">
-            <figure class="media media--cat" data-label="دسر"><img src="images/categories/dessert.webp" alt="دسر" /></figure>
-            <span class="cat__name">دسر</span>
-          </button>
+          <button class="cat is-active" data-cat="همه" role="tab" aria-selected="true" aria-pressed="true"><div class="media media--cat"></div><span class="cat__name">همه</span></button>
+          <button class="cat" data-cat="برگر" role="tab" aria-selected="false" aria-pressed="false"><div class="media media--cat"></div><span class="cat__name">برگر</span></button>
+          <button class="cat" data-cat="پیتزا" role="tab" aria-selected="false" aria-pressed="false"><div class="media media--cat"></div><span class="cat__name">پیتزا</span></button>
+          <button class="cat" data-cat="سوخاری" role="tab" aria-selected="false" aria-pressed="false"><div class="media media--cat"></div><span class="cat__name">سوخاری</span></button>
+          <button class="cat" data-cat="ساندویچ" role="tab" aria-selected="false" aria-pressed="false"><div class="media media--cat"></div><span class="cat__name">ساندویچ</span></button>
+          <button class="cat" data-cat="سیب‌زمینی" role="tab" aria-selected="false" aria-pressed="false"><div class="media media--cat"></div><span class="cat__name">سیب‌زمینی</span></button>
+          <button class="cat" data-cat="پیش‌غذا" role="tab" aria-selected="false" aria-pressed="false"><div class="media media--cat"></div><span class="cat__name">پیش‌غذا</span></button>
+          <button class="cat" data-cat="نوشیدنی" role="tab" aria-selected="false" aria-pressed="false"><div class="media media--cat"></div><span class="cat__name">نوشیدنی</span></button>
+          <button class="cat" data-cat="دسر" role="tab" aria-selected="false" aria-pressed="false"><div class="media media--cat"></div><span class="cat__name">دسر</span></button>
         </div>
       </div>
     </section>
@@ -174,9 +137,7 @@
             <p>پکیج‌های ویژه رو از دست نده.</p>
             <a href="#combos" class="btn btn--primary btn--lg">مشاهده پیشنهادها</a>
           </div>
-          <figure class="media media--offer" data-label="تصویر پیشنهاد ویژه — images/promotions/special-offer.webp">
-            <img src="images/promotions/special-offer.webp" alt="پیشنهاد ویژه" />
-          </figure>
+          <div class="media media--offer"></div>
         </div>
       </div>
     </section>
@@ -195,9 +156,7 @@
     <!-- ===== About ===== -->
     <section class="section about" id="about">
       <div class="container about__inner">
-        <figure class="media media--about" data-label="تصویر رستوران — images/about/restaurant.webp">
-          <img src="images/about/restaurant.webp" alt="فضای رستوران" />
-        </figure>
+        <div class="media media--about"></div>
         <div class="about__content">
           <span class="eyebrow">درباره ما</span>
           <h2 class="section__title">داستان ما، از عشق به طعم‌های خوب شروع شد</h2>
@@ -307,18 +266,14 @@
         </ol>
       </div>
     </section>
-
   </main>
 
   <!-- ===== Footer ===== -->
   <footer class="footer" id="contact">
     <div class="container footer__grid">
-
       <div class="footer__col footer__brand">
         <a href="#hero" class="brand">
-          <figure class="media media--logo" data-label="لوگو">
-            <img src="images/brand/logo.svg" alt="لوگوی فست‌فود آتش" />
-          </figure>
+          <div class="media media--logo"></div>
           <span class="brand__name">آتش</span>
         </a>
         <p>طعم تازه، داغ و بی‌نظیر فست‌فود؛ هر روز کنار شما.</p>
@@ -328,7 +283,6 @@
           <a href="#" aria-label="واتساپ">WA</a>
         </div>
       </div>
-
       <div class="footer__col">
         <h3>دسترسی سریع</h3>
         <ul>
@@ -338,7 +292,6 @@
           <li><a href="#about">درباره ما</a></li>
         </ul>
       </div>
-
       <div class="footer__col">
         <h3>دسته‌بندی‌ها</h3>
         <ul>
@@ -348,7 +301,6 @@
           <li><a href="#menu">نوشیدنی</a></li>
         </ul>
       </div>
-
       <div class="footer__col">
         <h3>تماس با ما</h3>
         <ul class="footer__contact">
@@ -357,7 +309,6 @@
           <li>🕒 ساعات کاری: <span class="placeholder-text">۱۲:۰۰ تا ۲۳:۰۰</span></li>
         </ul>
       </div>
-
       <div class="footer__col footer__newsletter">
         <h3>خبرنامه</h3>
         <p>از تخفیف‌ها و پیشنهادهای ویژه باخبر شو.</p>
@@ -366,9 +317,7 @@
           <button class="btn btn--primary" type="submit">عضویت</button>
         </form>
       </div>
-
     </div>
-
     <div class="footer__bottom">
       <div class="container">
         <p>© ۱۴۰۴ فست‌فود آتش — تمامی حقوق محفوظ است.</p>
